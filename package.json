@@ -1,0 +1,20 @@
+{
+  "name": "node-red-contrib-chromecast-session",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red": {
+    "nodes": {
+      "chromecast-session": "session.js"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromecast-player": "^0.2.3",
+    "request": "^2.88.0"
+  }
+}

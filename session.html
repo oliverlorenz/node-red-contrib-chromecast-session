@@ -1,0 +1,20 @@
+<script type="text/javascript">
+    RED.nodes.registerType('chromecast-session', {
+      category: 'output',
+      color: '#8BBDD9',
+      inputs:1,
+      outputs:1,
+      label: function() {
+          return this.name || "Chromecast Session";
+      },
+      paletteLabel: "Chromecast Session"
+    });
+</script>
+
+<script type="text/x-red" data-template-name="chromecast-session">
+    <div class="form-row"></div>
+</script>
+
+<script type="text/x-red" data-help-name="chromecast-session">
+    <p>Reads Chromecast Session</p>
+</script>
