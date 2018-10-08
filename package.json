@@ -24,9 +24,7 @@
     "email": "mail@oliverlorenz.com",
     "url": "https://oliverlorenz.com"
   },
-  "license": "ISC",
   "dependencies": {
-    "chromecast-player": "^0.2.3",
-    "request": "^2.88.0"
+    "chromecast-player": "^0.2.3"
   }
 }
