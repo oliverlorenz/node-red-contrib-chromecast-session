@@ -1,5 +1,4 @@
 var player = require('chromecast-player')();
-var request = require('request');
 
 module.exports = function (RED) {
     function ChromecastSession (config) {
@@ -9,7 +8,8 @@ module.exports = function (RED) {
         // Retrieve the config node
         this.on('input', function (msg) {
             player.attach(function(err, p) {
-                node.send(Object.assign(msg, { currentSession: p.currentSession }));
+                msg.payload = p.currentSession;
+                node.send(msg);
                 p.close();
             });
         })
